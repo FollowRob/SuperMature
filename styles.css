@@ -179,7 +179,8 @@ form button:active {
   border: 3px solid #FFA500;
 }
 
-.faq-section {
+.faq-section,
+.menu-section {
   background: #fff;
   border-radius: 8px;
   padding: 2rem;
@@ -188,7 +189,8 @@ form button:active {
 }
 
 .gallery-section h2,
-.faq-section h2 {
+.faq-section h2,
+.menu-section h2 {
   color: #1a1a1a;
   margin-bottom: 1.25rem;
   border-bottom: 3px solid #FFA500;
@@ -230,6 +232,10 @@ form button:active {
   object-fit: cover;
   border-radius: 8px;
   display: block;
+}
+
+.image-accordion p {
+  margin: 1rem 0 0;
 }
 
 @media (max-width: 768px) {
