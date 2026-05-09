@@ -72,7 +72,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 500px;
+  min-height: calc(100vh - 56px);
   background-image:
     linear-gradient(135deg, rgba(28, 28, 28, 0.88), rgba(0, 0, 0, 0.92)),
     url('images/test.png'),
@@ -90,23 +90,33 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 
+.hero-badge {
+  width: min(469px, 98vw);
+  height: auto;
+  margin-bottom: -8rem;
+  display: inline-block;
+  transform: translateY(-50%);
+}
+
 .hero-content h1 {
   font-size: 3rem;
   font-weight: 400 !important;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2rem);
 }
 
 .hero-content .lead {
   font-size: 1.5rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   color: #fff;
+  transform: translateY(-2rem);
 }
 
 .hero-actions {
   position: absolute;
   left: 50%;
-  bottom: 2.25rem;
+  bottom: 5.5rem;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
