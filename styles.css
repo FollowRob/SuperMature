@@ -528,12 +528,31 @@ footer.footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1rem 8rem;
+  }
+
+  .hero-badge {
+    width: min(320px, 82vw);
+    margin-bottom: 1rem;
+    transform: none;
+  }
+
   .hero-content h1 {
     font-size: 2rem;
+    transform: none;
   }
   
   .hero-content .lead {
     font-size: 1.1rem;
+    transform: none;
+  }
+
+  .hero-actions {
+    position: static;
+    width: auto;
+    margin-top: 1.75rem;
+    transform: none;
   }
   
   .nav-link {
