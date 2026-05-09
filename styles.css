@@ -9,6 +9,12 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   background: #fff;
   color: #1f2937;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+body.dark-mode {
+  background: #121212;
+  color: #f3f4f6;
 }
 
 .bebas-neue-regular {
@@ -51,6 +57,33 @@ body {
 
 .nav-link:hover {
   color: #fff !important;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  color: #FFA500;
+  font-size: 1rem;
+  padding: 0;
+  line-height: 1;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #FFA500;
+  color: #1a1a1a;
 }
 
 /* Navbar Toggler Custom Icon */
@@ -191,6 +224,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Main Content */
 main {
   background: #fff;
+  transition: background-color 0.25s ease;
 }
 
 /* Form Styling */
@@ -385,6 +419,7 @@ form button:active {
 
 .accordion-button {
   color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
 }
 
@@ -402,6 +437,51 @@ form button:active {
 .accordion-body {
   color: #374151;
   line-height: 1.6;
+}
+
+body.dark-mode main,
+body.dark-mode .card,
+body.dark-mode .gallery-section,
+body.dark-mode .blurb-section,
+body.dark-mode .faq-section,
+body.dark-mode .menu-section {
+  background: #121212;
+}
+
+body.dark-mode .card h2,
+body.dark-mode .gallery-section h2,
+body.dark-mode .blurb-section h2,
+body.dark-mode .faq-section h2,
+body.dark-mode .menu-section h2,
+body.dark-mode form label,
+body.dark-mode .accordion-button {
+  color: #f3f4f6;
+}
+
+body.dark-mode .accordion-item,
+body.dark-mode .accordion-button,
+body.dark-mode .accordion-body {
+  background-color: #1d1d1d;
+}
+
+body.dark-mode .accordion-item {
+  border-color: rgba(255, 165, 0, 0.3);
+}
+
+body.dark-mode .accordion-body {
+  color: #d1d5db;
+}
+
+body.dark-mode form input,
+body.dark-mode form textarea {
+  background-color: #1d1d1d;
+  border-color: #3f3f46;
+  color: #f3f4f6;
+}
+
+body.dark-mode form input::placeholder,
+body.dark-mode form textarea::placeholder {
+  color: #9ca3af;
 }
 
 .image-accordion .accordion-body {
