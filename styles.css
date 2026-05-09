@@ -446,6 +446,7 @@ body.dark-mode .blurb-section,
 body.dark-mode .faq-section,
 body.dark-mode .menu-section {
   background: #121212;
+  color: #f3f4f6;
 }
 
 body.dark-mode .card h2,
