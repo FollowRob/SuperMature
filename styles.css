@@ -223,6 +223,22 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0.5rem;
 }
 
+.section-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-title-row h2 {
+  margin-bottom: 0;
+}
+
+.section-cta {
+  flex: 0 0 auto;
+}
+
 /* Main Content */
 main {
   background: #fff;
@@ -751,6 +767,11 @@ footer.footer .container-fluid > p:first-child {
     width: auto;
     margin-top: 1.75rem;
     transform: none;
+  }
+
+  .section-title-row {
+    align-items: flex-start;
+    flex-direction: column;
   }
   
   .nav-link {
